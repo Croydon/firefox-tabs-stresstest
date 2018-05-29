@@ -1,0 +1,48 @@
+{
+    "name": "Firefox Tabs Stresstest",
+    "description": "Opens a hell lot of tabs.",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "author": "Michael 'Croydon' Keck",
+    "developer":
+    {
+        "name": "Michael 'Croydon' Keck"
+    },
+    "homepage_url": "https://github.com/Croydon/vertical-tabs-reloaded",
+    "permissions": ["tabs", "activeTab"],
+    "incognito": "spanning",
+    "background":
+    {
+        "scripts":
+        [
+            "index.js"
+        ]
+    },
+    "browser_action":
+    {
+        "default_icon":
+        {
+            "16": "icon.png",
+            "48": "icon.png",
+            "96": "icon.png",
+            "128": "icon.png"
+        },
+        "default_title": "Open lot of tabs",
+        "browser_style": true
+    },
+    "icons":
+    {
+        "16": "icon.png",
+        "48": "icon.png",
+        "96": "icon.png",
+        "128": "icon.png"
+    },
+    "applications":
+    {
+        "gecko":
+        {
+            "id": "tabsstresstest@go-dev.de",
+            "strict_min_version": "60.0"
+        }
+    }
+}
